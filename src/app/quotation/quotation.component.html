@@ -1,0 +1,120 @@
+<div class="container mt-3">
+    
+    <form  #form="ngForm" (submit)="OnSubmit(form)" style="margin:20px;">
+        <div class="row">
+           <div class="col-md-3">         
+           </div> 
+           <div class="col-md-3">
+                <label for="prefix" class="form-label">Prefix</label> <br>
+                <select id="prefix" class="form-control">
+                    <option selected>Mr.</option>
+                    <option>Ms.</option>
+                    <option>Mrs.</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label for="firstName" class="form-label">First Name <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="firstName" required
+                 #FirstName="ngModel" name="firstName" [(ngModel)]="service.fromData.firstName" >
+            </div>
+            <div class="col-md-3">
+            
+            </div> 
+        </div>      
+    
+        <div class="row mt-3">
+            <div class="col-md-3">        
+            </div> 
+            <div class="col-md-3">
+                <label for="MiddalName" class="form-label">Middle Name</label>
+                <input type="text" class="form-control" id="middalName"
+                #FirstName="ngModel" name="MiddalName" [(ngModel)]="service.fromData.middleName" >
+            </div>
+            <div class="col-md-3">
+                <label for="LastName" class="form-label">Last Name <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="lastName"
+                #FirstName="ngModel" name="LastName" [(ngModel)]="service.fromData.lastName" >
+            </div>
+            <div class="col-md-3">        
+            </div> 
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-md-3">        
+            </div> 
+            <div class="col-md-6">
+                <label for="email" class="form-label">Email Address <span class="text-danger">*</span></label>
+                <input type="email" class="form-control" id="email" required
+                #FirstName="ngModel" name="email" [(ngModel)]="service.fromData.email" >
+            </div>
+            <div class="col-md-3">        
+            </div> 
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-3">        
+            </div> 
+            <div class="col-md-3">
+                <label for="phone" class="form-label">Phone Number <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="phone" required
+                #FirstName="ngModel" name="phone" [(ngModel)]="service.fromData.phone" >
+            </div>
+            <!-- Country -->
+            <div class="col-md-3">
+                <label for="country" class="form-label">Country <span class="text-danger">*</span></label>
+                <input type="text" class="form-control is-invalid" id="country" required
+                #FirstName="ngModel" name="country" [(ngModel)]="service.fromData.country" >
+
+            </div>
+            <div class="col-md-3">        
+            </div> 
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-3">        
+            </div> 
+            <!-- Company Name -->
+            <div class="col-md-3">
+                <label for="companyName" class="form-label">Company Name</label>
+                <input type="text" class="form-control" id="companyName" 
+                #FirstName="ngModel" name="companyName" [(ngModel)]="service.fromData.companyName" >
+            </div>
+
+            <!-- Website -->
+            <div class="col-md-3">
+                <label for="website" class="form-label">Website</label>
+                <input type="text" class="form-control" id="website"
+                #FirstName="ngModel" name="website" [(ngModel)]="service.fromData.website" >
+            </div>
+            <div class="col-md-3">        
+            </div> 
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-3">        
+            </div> 
+            <!-- Product Requirements -->
+            <div class="col-md-3">
+                <label for="productReq" class="form-label">Product Requirements <span
+                        class="text-danger">*</span></label>
+                        <textarea class="form-control" id="productReq" rows="3" required
+                        #FirstName="ngModel" name="productRequirements" [(ngModel)]="service.fromData.productRequirements" ></textarea>
+            </div>
+            <!-- Exact Requirements -->
+            <div class="col-md-3">
+                <label for="exactReq" class="form-label">Exact Requirements <span class="text-danger">*</span></label>
+                <textarea class="form-control" id="exactReq" rows="3" required
+                #FirstName="ngModel" name="exactRequirements" [(ngModel)]="service.fromData.exactRequirements" ></textarea>
+            </div>
+            <div class="col-md-3">        
+            </div> 
+        </div>
+
+        <div class="row mt-4" style="margin-top: 2%;">
+            <div class="col-md-3">        
+            </div> 
+            <div class="col-md-2 d-grid" >    
+                <button class="btn btn-lg btn-success" type="RequestQuote" class="btn btn-primary">Request Quote</button>    
+            </div> 
+           
+        </div>
+    </form>
+
+</div>

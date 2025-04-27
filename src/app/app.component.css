@@ -1,0 +1,14 @@
+.footer {
+    height: 50px;width: 100%; background-color: #27261d; color: aliceblue;  
+ }
+ .navbar {
+    border-radius: 0px;
+}
+.bg-container {
+    background-image: url('/assets/Img/bg_quote-banner.webp'); /* Adjust path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Full-screen height */
+    width: 100%;
+}
